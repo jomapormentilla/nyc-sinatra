@@ -1,0 +1,12 @@
+<a class="button" href="/figures">Figures</a>
+<a class="button" href="/">Home</a>
+
+<br>
+
+<h2>All Historical Figures</h2>
+
+<% @figures.each do |figure| %>
+    <p><a href="/figures/<%= figure.id %>"><%= figure.name %></a></p>
+<% end %>
+
+
